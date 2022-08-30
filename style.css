@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+} */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.235);
+}
+body{
+    background-color: #051b27;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+.body{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo-link{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a p{   /*same as logo-link*/
+    font-weight: 700;
+    color: #00a3ff;
+    font-size: 48px;
+    margin-top: 4px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+} 
+nav ul li a:hover{
+    letter-spacing: 5px;
+    color: #00a3ff;
+}
+.intro .intro-text h3{
+    font-size: 50px;
+    font-weight: 700;
+}
+.intro .intro-text span{
+    font-size: 50px;
+    font-weight: 700;
+}
+.intro .intro-text span{
+    color: #00a3ff;
+}
+.intro-text p{
+    font-size: 40px;
+    font-weight: 700;
+}
+.intro-text h2 {
+    color: #A0A0A0;
+}
+.intro a button{
+    text-decoration: none;
+    font-size:15px;
+    padding: 20px;
+    outline: none;
+    border-style: none;
+    border: 3px solid #00a3ff;
+    background: none;
+    color: #00a3ff;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.btn a{
+    text-decoration: none;
+    color: #00a3ff;
+}
+.icons{
+    display: flex;
+    margin-top: 50px;
+}
+.icons img{
+    padding-right: 20px;   
+    transition: margin-top .2s ease;
+
+}
+.footer{ 
+    background-color: #0B2C3F;
+    margin-top: 150px;
+    padding: 20px;
+    padding-top: 70px;
+}
+.end{
+    margin-left: 100px;
+}
+.end span{
+    font-size: 15px;
+}
+.end p a{
+    color: white;
+}
+.bot{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+}
+.ficons img{
+    padding-right: 30px;
+}
+.ficons a{
+    text-decoration: none;
+}
+.icons img:hover{
+    margin-top: -5px;
+}
+.active{
+    color: #00a3ff;
+    border: solid 2px #00a3ff;
+    padding: 15px;
+    font-weight: 500;
+}
+.active:hover{
+    letter-spacing: normal;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==== ABOUT ME ==== */
+.content p{
+    font-size: 25px;
+}
+.content p span{
+    font-weight: 700;
+}
+.tabs{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tabs-head{
+    display: flex;
+    align-items: stretch;
+}
+.tabs-toggle{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #0B2C3F;
+}
+.tabs-toggle.is-active{
+    background-color: #00a3ff;
+}
+.tabs-content{
+    padding: 30px;
+    display: none;
+}
+.tabs-content.is-active{
+    display: block;
+}
+.tabs-title{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tabs-text{
+    font-size: 25px;
+    color: white;
+}
+.tabs-head span{
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 20px
+}
+/* end of tabs */
+.about{
+    margin-top: 100px;
+}
+.skills{
+    width: 50%;
+    margin-top: 100px;
+}
+.skill1{
+    display: flex;
+    justify-content: space-between;
+}
+.skills .skill1 .skill-level{
+    display: flex;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+.skills .skill1 .skill-level .em{
+    width: 40px;
+    height: 15px;
+    background-color: #0B2C3F;
+    margin: 5px;
+}
+.skills .skill1 .skill-level .fill{
+    background-color: #00a3ff;
+    width: 40px;
+    height: 15px;
+    margin: 5px;
+}
+/* ==== END OF ABOUT ME ====*/
+
+
+
+
+
+
+
+
+
+/* ==== BEGIN WORKS ==== */
+
+.works{
+    margin-top: 100px;
+}
+.feat-title{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.work-item{
+    display: flex;
+    border: solid 1.5px #00a2ff95;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.work-info{
+    height: 100%;
+    width: 50%;
+    border-right: #0B2C3F solid 2px;
+    padding: 30px;
+}
+.work-info p{
+    color: #A0A0A0;
+}
+.work-desc{
+    width: 50%;
+}
+.work-desc h3 a{
+    color: #00a3ff;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.work-desc1 a img{
+    width: 100%;
+    height: 100%;
+}
+/* END OF works */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== BEGIN CONTACT ==== */
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.con{
+    border: solid 2px #00a3ff;
+    color: #00a3ff;
+    padding: 70px;
+    width: 300px;
+    height: 150px;
+    justify-content: space-around;
+    margin: 30px;
+    text-align: center;
+}
+.mail, .phone, .email, .number{
+    font-size: 25px;
+    font-weight: 700;
+}
+.email, .number{
+    display: none;
+}
+.con:hover .number{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+.con:hover .email{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+.con:hover .email a{
+    color: white;
+}
+.con:hover .number a{
+    color: white;
+}
+.con:hover{
+    background-color: #00a3ff;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+@media only screen and (max-width: 767px) {
+    nav ul li a{
+        font-size: 13px;
+    } 
+    nav ul li a:hover{
+        letter-spacing: 0px;
+        color: #00a3ff;
+    }
+    nav ul li{
+        margin-right: 20px;
+    }
+    nav a p{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    nav{
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    nav ul{
+            margin-left: -40px;
+    }
+    .intro .intro-text h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .intro .intro-text p{
+        font-size: 20px;font-size: 20px;
+    }
+    .intro .intro-text h2{
+        font-size: 15px;
+    }
+    .intro .intro-text span{
+        font-size: 30px;
+    }
+    .intro a button{
+        font-size: 10px;
+        padding: 20px;
+        border: 3px solid #00a3ff;
+        margin-top: 20px;
+    }
+    .end{
+        margin-left: 30px;
+    }
+    .active{
+        border: solid 1px #00a3ff;
+        padding: 7px;
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .tabs-head span{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .tabs-title{
+        font-size: 25px;
+    }
+    .tabs-text{
+        font-size: 15px;
+    }
+    .skill-level{
+        justify-content: flex-end;
+    }
+    .skills .skill1 .skill-level .em{
+        width: 20px;
+        height: 5px;
+        margin-right: 2px;
+
+    }
+    .skills .skill1 .skill-level .fill{
+        width: 20px;
+        height: 5px;
+        margin-right: 2px;
+
+    }
+    .skill1 h3{
+        font-size: 13px;
+        width: 10%;
+    }
+    .work-info{
+        width: 80%;
+        padding: 30px;
+    }
+    .work-desc{
+        padding: 30px;
+    }
+    .con{
+        padding: 30px;
+        width: 200px;
+        height: 50px;
+        margin: 0px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .mail, .phone, .email, .number{
+        font-size: 12px;
+    }
+    .bot p{
+        font-size: 15px;
+    }
+    .con:hover .number{
+        font-size: 12px;
+    }
+    .con:hover .email{
+        font-size: 12px;
+    }
+    .skills{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .tabs-content{
+        padding: 5px;
+    }
+
+
+
+
+
+   
+
+
+
+
+    .bot{
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .ficons {
+        margin-top: 50px;
+    }
+    .ficons img{
+       padding-right: 15px;
+       width: 20px;
+       height: 20px;
+    }
+    .work-item{
+        display: block;
+    }
+    .work-info{
+        border-right: none;
+    }
+    .work-info h1{
+      font-size: 15px;  
+    }
+    .work-info h3{
+      font-size: 12px;  
+    }
+    .work-info p{
+      font-size: 10px;  
+    }
+    .work-desc h3 a{
+        font-size: 13px;
+    }
+    
+    .contact{
+        display: block;
+        justify-content: center;
+    }
+    .body{
+        margin-top: 70px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bot{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    } 
+    nav ul li a:hover{
+        letter-spacing: 3px;
+        color: #00a3ff;
+    }
+    nav ul li{
+        margin-right: 70px;
+    }
+    nav a p{
+        font-size: 40px;
+    }
+    .skills{
+        width: 100%;
+    }
+    .ficons {
+        margin-top: 50px;
+    }
+    .work-item{
+        display: block;
+    }
+    .work-info{
+        border-right: none;
+    }
+    .contact{
+        display: block;
+    }
+    .body{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
