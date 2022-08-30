@@ -550,3 +550,19 @@ nav ul li a:hover{
         margin-left: 40px;
     }
 }
+
+
+@supports (-webkit-touch-callout: none) {
+   /* CSS specific to iOS devices */ 
+    .email, .number{
+    display: block;
+    }
+    .con{
+    background-color: #00a3ff;
+    color: white;
+    border: none;
+}
+}
+
+
+
