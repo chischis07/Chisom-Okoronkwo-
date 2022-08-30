@@ -561,7 +561,13 @@ nav ul li a:hover{
     background-color: #00a3ff;
     color: white;
     border: none;
-}
+    }
+    .con .email a{
+    color: white;
+    }
+    .con .number a{
+    color: white;
+    }
 }
 
 
